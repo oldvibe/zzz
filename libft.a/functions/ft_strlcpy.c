@@ -16,13 +16,13 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t destsize)
     return (strlen(src));
 }
 
-#include <stdio.h>
-int main()
-{
-    char dest[100] = "Hello, ";
-    char src[] = "World!";
-    printf("%zu\n", ft_strlcpy(dest, src, sizeof(dest)));
-    printf("dest == %s\n", dest);
+// #include <stdio.h>
+// int main()
+// {
+//     char dest[100] = "Hello, ";
+//     char src[] = "World!";
+//     printf("%zu\n", ft_strlcpy(dest, src, sizeof(dest)));
+//     printf("dest == %s\n", dest);
 
-    return 0;
-}
+//     return 0;
+// }
