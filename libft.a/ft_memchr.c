@@ -19,12 +19,11 @@ void *ft_memchr(const void *s, int c, size_t n)
     return NULL;
 }
 
-// #include<stdio.h>
-// int main()
-// {
-//     int i = 'l';
-//     char *str = "Hello, World!";
-//     printf("%p\n", ft_memchr(str, i, strlen(str)));
-
-//     return 0;
-// }
+#include<stdio.h>
+int main()
+{
+    int i = 'W';
+    char *str = "Hello, World!";
+    printf("%p\n", ft_memchr(str, i, strlen(str)));
+    return 0;
+}
