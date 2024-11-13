@@ -1,4 +1,9 @@
-int ft_isdigit(int i)
+#include "libft.h"
+int ft_isdigit(int c)
 {
-    return (i >= '0' && i <= '9') ;
+    if (c >= 48 && c <= 57)
+    {
+        return (1);
+    }
+	return (0);
 }

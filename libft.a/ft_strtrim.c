@@ -4,10 +4,10 @@ char	*ft_strtrim(char const *s, char const *set)
 {
 	size_t	len_s;
 	size_t	i;
-	size_t	j;
+	//size_t	j;
 
 	i = 0;
-	j = i;
+	//j = i;
 	if (!*s)
 		return (ft_strdup(""));
 	while (strchr(set, s[i]) && s[i])

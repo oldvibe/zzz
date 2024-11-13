@@ -1,28 +1,28 @@
 #include "libft.h"
 #include <stdio.h>
 
-int	wordscount(char const *s, char c)
+int	wordscount(char const *str, char c)
 {
 	int	i;
-	int	vw;
+	int	j;
 
 	i = 0;
-	vw = 0;
-	while (s[i])
+	j = 0;
+	while (str[i])
 	{
-		while (s[i] == c)
+		while (str[i] == c)
 			i++;
-		if (s[i])
-			vw++;
-		while (s[i] != c && s[i])
+		if (str[i])
+			j++;
+		while (str[i] != c && str[i])
 		{
 			i++;
 		}
 	}
-	return (vw);
+	return (j);
 }
 
-char	**eamarli(char const *s, char **m, char c, int wc)
+char	**stockstrings(char const *s, char **m, char c, int wc)
 {
 	int	i;
 	int	start;
@@ -55,6 +55,6 @@ char	**ft_split(char const *s, char c)
 	m = (char **)malloc(sizeof(char *) * (wordscount(s, c) + 1));
 	if (!m)
 		return (0);
-	m = eamarli(s, m, c, wc);
+	m = stockstrings(s, m, c, wc);
 	return (m);
 }

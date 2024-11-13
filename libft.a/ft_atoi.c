@@ -1,3 +1,4 @@
+#include "libft.h"
 int ft_atoi(const char *str)
 {
     int sign;
@@ -19,11 +20,19 @@ int ft_atoi(const char *str)
             sign = 1;
        i++;
     }
-    while (str[i] || (str[i] >= '0' && str[i] <= '9'))
+    while (str[i] || ft_isdigit(str[i]))
     {
         res = res * 10 + (str[i] - '0');
         i++;
     }
     return sign * res;
 }
+
+// #include <stdio.h>
+// int main() {
+//     int n;
+//     n = ft_atoi("   -123456789");
+//     printf("%d\n", n);
+//     return 0;
+// }
 
